@@ -1,0 +1,185 @@
+:root{
+    --Green-Color : #414833;
+    --Brown-color: #a68a64;
+    --Beige-color:#f1eae4;
+}
+
+body{
+    background-color: var(--Green-Color);
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+
+
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.MainBody{
+    width: 100vh;
+    background-color: var(--Green-Color);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family: Doran;
+}
+
+header{
+    width: 96%;
+    height: 80px;   
+    border-radius: 10px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.BrandLogo img{
+    width: 100px;
+}
+
+.BrandName{
+    color: white;
+}
+
+.ContactUs{
+    padding: 5px 10px ;
+    background-color: var(--Brown-color);
+    border-radius: 10px;
+    margin-left: 20px;
+    font-size: small;
+}
+
+.categories{
+    width: 96%;
+    height: 50px;
+    justify-content: space-between;
+    color: black;
+    background-color: var(--Beige-color);
+    margin-top: 30px;
+    height: 50px;
+    border-radius: 0.5rem;
+}
+
+
+.Category-item{
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    border-radius: 5px;
+    animation: 0.5s;
+
+}
+
+
+
+
+.Category-item:nth-child(4){
+    border:none;
+}
+
+.categories hr{
+    height: 60%;
+}
+
+
+.MenuItems{
+    width: 350px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+
+.MenuItem{
+    width: 98%;
+    padding: 5px 0px;
+    display: flex;
+    align-items: center;
+    background-color: var(--Beige-color);
+    border-radius: 1rem;
+    margin-bottom: 10px;
+}
+
+.MenuItem img{
+    width: 100px;
+    border-radius: 1rem;
+    margin-right: 10px;
+}
+
+.MenuItem h1{
+    margin-top: 20px;
+}
+
+.MenuItemDetails {
+    margin-right: 10px;
+}
+
+.MenuItemDetails h4{
+    font-size:20px ;
+}
+.MenuItemDetails p{
+    font-size: 10px;
+}
+
+.MenuItemDetails span::after{
+content:"تومان";
+font-size: smaller;
+}
+
+.MenuItems h1{
+    color: white;
+    margin-bottom: 20px;
+}
+
+.MenuItems h1::before,
+.MenuItems h1::after{
+    content: "✦";
+    margin: 5px;
+    
+}
+
+
+.GoUp{
+    width: 100%;
+    font-size: smaller;
+    height: 30px;
+    color: white;
+    display: flex;
+    justify-content:end ;
+    margin: 20px;
+    margin-left: 30px;
+    position: fixed;
+    top: 90vh;
+    transition: 1s all;
+
+}
+
+.GoUp:hover{
+    color: black;
+}
+
+.GoUp a{
+    padding: 5px 10px;
+    background-color: var(--Brown-color);
+    border-radius: 0.5rem;
+    color: white;
+}
